@@ -1,0 +1,379 @@
+:root {
+    --checkbox-size: 12px;
+    --check-size: calc(var(--checkbox-size) / 3);
+    --check-color: white;
+    --checkbox-color: #ff8f2f;
+}
+.container-1 {
+    padding: .5rem;
+    width: 100%;
+}
+.container-2 {
+    padding: .5rem 1.5rem;
+}
+.heading-1 {
+    color: #2d468d;
+    font-weight: 600;
+    font-size: 14px;
+}
+.clinical_right .para-1 {
+    color: #2d468d;
+    font-size: 10px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+.timezone{
+    color: #FF8F2F;
+    border: 0;
+    font-size: 12px;
+    margin-bottom: 12px;
+}
+.timezone:focus{
+    outline: none;
+}
+.grid-1 {
+    display: grid;
+    grid-template-columns: 35% 35% 30%;
+    border-top: 1px solid #d0d0d0;
+}
+.grid-1 > div:nth-of-type(1) {
+    grid-column: 1 / span 2;
+    border-right: 1px solid #d0d0d0;
+}
+.grid-1 > div:nth-of-type(2) {
+    grid-column: 3 / span 1;
+}
+.grid-1 > div {
+    padding: .5rem 1.5rem;
+}
+.heading-2 {
+    color: #2d468d;
+    font-weight: 600;
+    font-size: 12px;
+}
+ul.list-1 {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+ul.list-1 > li {
+    border-bottom: 1px solid rgba(208, 208, 208, 0.5);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.flex-1 {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.flex-2, .flex-3, .flex-4, .flex-5, .flex-4 .trash, .flex-7 {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.flex-2 > div:nth-of-type(1) {
+    margin-right: 20px;
+}
+.flex-3 > div:nth-of-type(1), .flex-5 > div:nth-of-type(1) {
+    margin-right: 10px;
+}
+.flex-3 > div:nth-of-type(2) {
+    width: 35px;
+}
+.flex-3 .day {
+    color: #2d468d;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.flex-4 > div:not(:last-child) {
+    margin-right: 5px;
+}
+.flex-4 .time > input {
+    width: 72px;
+    height: 35px;
+    border: 1px solid #e7e7e7;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 10px;
+    color: #2d468d;
+    font-size: 10px;
+    text-align: center;
+}
+.flex-4 .hyphen > span {
+    color: #2d468d;
+    font-size: 10px;
+}
+.flex-4 .unavailable > span {
+    color: #767676;
+    font-size: 10px;
+}
+.flex-4 .trash > img, .flex-5 .plus > img, .flex-5 .copy > img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.flex-5 > div {
+    display: -ms-flexbox;
+    display: flex;
+}
+.para-2 {
+    font-size: 12px;
+    color: #767676;
+    margin-bottom: 30px;
+}
+.checkbox {
+    display: block;
+    position: relative;
+    margin-bottom: 0;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    height: var(--checkbox-size);
+    width: var(--checkbox-size);
+}
+.checkbox > input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: var(--checkbox-size);
+    width: var(--checkbox-size);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.checkbox > span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: var(--checkbox-size);
+	width: var(--checkbox-size);
+	background-color: #fff;
+    border: 1px solid #d0d0d0;
+    border-radius: 2px;
+
+}
+.checkbox:hover > input ~ span {
+	background-color: #fff;
+}
+.checkbox > input:checked ~ span {
+	background-color: var(--checkbox-color);
+    border: 1px solid var(--checkbox-color);
+}
+.checkbox > input:checked ~ span:after {
+  display: block;
+}
+.checkbox > span:after {
+    content: "";
+	position: absolute;
+	display: none;
+    top: 50%;
+    left: 50%;
+    width: var(--check-size);
+    height: calc(var(--check-size) * 1.8);
+    border: calc(var(--check-size) * 0.4) solid var(--check-color);
+    border-width: 0 calc(var(--check-size) * 0.5) calc(var(--check-size) * 0.5) 0;
+    -webkit-transform: translate(-50%, -50%) rotate(45deg);
+    -ms-transform: translate(-50%, -50%) rotate(45deg);
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.text-center {
+    text-align: center!important;
+}
+.button-1 {
+    border: 1px solid #ff8f2f;
+    border-radius: 5px;
+    background-color: white;
+    color: #ff8f2f;
+    font-size: 14px;
+    cursor: pointer;
+    width: 160px;
+    height: 50px;
+}
+.button-1:hover {
+    background: #ff8f2f;
+    color: white;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(45, 70, 141, 0.8);
+}
+.modal-content {
+    box-sizing: border-box;
+    width: 365px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.modal-content .padding {
+    padding: 25px;
+    border: 1px solid #dadada;
+}
+.heading-3 {
+    color: #2d468d;
+    font-weight: 600;
+    font-size: 14px;
+    width: 260px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.flex-6 {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.flex-6 .month-year {
+    font-size: 14px;
+    color: #2d468d;
+}
+.flex-6 {
+    margin-bottom: 15px;
+}
+.flex-7 > div:nth-of-type(1) {
+    margin-right: 20px;
+}
+.flex-7 button {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    box-sizing: border-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background: transparent;
+}
+.flex-7 button:disabled > i{
+    color: #7a7a7a;
+}
+.flex-7 button:not(:disabled) > i {
+    color: #ff8f2f;
+}
+.flex-7 i {
+    color: #7a7a7a;
+    font-size: 12px;
+}
+.calander-header, .calander-body {
+    display: grid;
+    grid-template-columns: 14.2% 14.2% 14.2% 14.2% 14.2% 14.2% auto;
+    margin-bottom: 15px;
+}
+.calander-body {
+    row-gap: 5px;
+}
+.calander-header .calander-day, .calander-body .calander-cell {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.calander-header .calander-day > span {
+    font-size: 12px;
+    color: #7a7a7a;
+    text-transform: uppercase;
+}
+.calander-body .calander-cell > span {
+    font-size: 14px;
+    font-weight: 600;
+    color: #767676;
+}
+.calander-body .calander-cell > button {
+    width: 40px;
+    height: 40px;
+    background: #B2d4ef;
+    font-weight: 600;
+    font-size: 14px;
+    color: #2d468d;
+    border-radius: 50%;
+    cursor: pointer;
+    box-sizing: border-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+.calander-body .calander-cell > button:hover, .calander-body .calander-cell > button.active {
+    background: #2d468d;
+    color: white;
+}
+.calander-footer {
+    background: #f9f9f9;
+}
+.heading-4 {
+    color: #2d468d;
+    font-weight: 600;
+    font-size: 12px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+ul.list-2 {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+ul.list-2 > li:not(:last-child) {
+    margin-bottom: 20px;
+}
+.grid-2 {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 10px;
+    padding: 25px;
+}
+.button-2, .button-3 {
+    border-color: #ff8f2f;
+    border: 1px solid #ff8f2f;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    width: 100%;
+    height: 50px;
+}
+.button-2 {
+    background-color: white;
+    color: #ff8f2f;
+}
+.button-3 {
+    background-color: #ff8f2f;
+    color: white;
+}
+.button-2:hover {
+    background: #ff8f2f;
+    color: white;
+}
+.button-3:hover {
+    background-color: white;
+    color: #ff8f2f;
+}

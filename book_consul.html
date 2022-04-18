@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Book Consultation</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" type="text/css" href="assets/css/common.css"> -->
+    <link rel="stylesheet" type="text/css" href="assets/css/book_consul.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+</head>
+<body>
+    <!-- header section start -->
+    <header>
+        <div class="back">
+            <img src="assets/images/back.png">
+        </div>
+        <p>
+            Your Lower Back Program
+        </p>
+    </header>
+
+    <!-- main section start -->
+    <div class="line">
+        <div class="sq_tri">
+            <div class="sq active">
+            Date and Time
+            </div>
+            <div class="tri active"></div>
+        </div>
+        <div class="sq_tri2">
+            <div class="sq2 inactive">
+            Upload
+            </div>
+            <div class="tri2 inactive"></div>
+        </div>
+        <div class="sq_tri3 inactive">
+            Summary
+        </div>
+      </div>
+
+    <!-- date and time section -->
+    <div class="date_time container">
+        <div class="pick">
+            <div class="date">
+                <p class="date_name">Pick a date</p>
+                <div class="calendar">
+                    <div class="group header">
+                        <p class="left monthname pointer"></p>
+                        <p class="left pointer minusmonth">
+                            <img src="assets/images/cal_before.png">
+                        </p>
+                        <p class="right pointer addmonth">                            
+                            <img src="assets/images/cal_next.png">
+                        </p>
+                    </div>
+                    <ul class="group">
+                        <li>M</li>
+                        <li>T</li>
+                        <li>W</li>
+                        <li>T</li>
+                        <li>F</li>
+                        <li>S</li>
+                        <li>S</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="time">
+                <p class="time_name">Pick a time</p>
+                <div class="time_slot">
+                    <div class="slot_row">
+                        <p>08:00 am</p>
+                        <p>09:00 am</p>
+                    </div>
+                    <div class="slot_row">
+                        <p>10:00 am</p>
+                        <p>11:00 am</p>
+                    </div>
+                    <div class="slot_row">
+                        <p>02:00 pm</p>
+                        <p>03:00 pm</p>
+                    </div>
+                    <div class="slot_row">
+                        <p>04:00 pm</p>
+                        <p>05:00 pm</p>
+                    </div>
+                    <div class="slot_row">
+                        <p>06:00 pm</p>
+                        <p>07:00 pm</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="btn_next">
+            <button>Next</button>
+        </div>
+    </div>
+
+    <!-- upload section -->
+    <div class="upload container">
+        <p class="upload_title">Upload documents (optional)</p>
+        <p class="upload_text">Upload your x-rays and MRI scans, doctors’ opinions and other medical documentation. It will help your Physia Clinic expert provide you with an accurate diagnosis and treatment recommendation.</p>
+        <div class="upload_part">
+            <input type="file">
+            <img src="assets/images/upload.png">
+            <p>Upload here</p>
+        </div>
+        <p class="upload_text">
+            * Your data is secure with us, as outlined in our <span class="yellow"> Privacy Policy </span>
+        </p>
+        <div class="btn_group">
+            <button class="group_back">Back</button>
+            <button class="group_next">Next</button>
+        </div>
+    </div>
+
+    <!-- confirm section start -->
+    <div class="confirm container">
+        <p class="confirm_title">Summary</p>
+        <div class="change_date">
+            <div class="date_title">
+                <img src="assets/images/calendar.png">
+                <p>April 17</p>
+            </div>
+            <a href="#">change</a>
+        </div>
+        <div class="change_time">
+            <div class="time_title">
+                <img src="assets/images/clock.png">
+                <p>11:00 am</p>
+            </div>
+            <a href="#">change</a>
+        </div>
+        <div class="change_doc">
+            <div class="doc_title">
+                <img src="assets/images/document.png">
+                <p>Doc./certs</p>
+            </div>
+            <a href="#">change</a>
+        </div>
+        <div class="btn_booking">
+            <button>Confirm Booking</button>
+        </div>
+    </div>
+
+    <!-- reset popup -->
+    <div id="book_popup" class="book_popup">
+        <div class="book_content">
+            <img src="assets/images/book_cong.png">
+            <p class="book_title">Congrats!</p>
+            <p class="book_text">You’ve booked your initial consultation.</p>
+            <button class="btn_add">Add to Calendar</button>
+            <button class="btn_close">Close</button>
+        </div>
+    </div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".back img").click(function(){
+            window.location.href = "initial_consul.html";
+        });
+        
+        $(".btn_booking button").click(function(){
+            $(".book_popup").css("display", "block");
+        });
+        // $(".forgot_content button").click(function(){
+        //     $(".forgot_popup").css("display", "none");
+        // });.
+
+        $(".btn_add").click(function(){
+            window.location.href = "final_consul.html";
+        });
+        $(".btn_close").click(function(){
+            window.location.href = "final_consul.html";
+        });
+    });
+    var reset = document.getElementById("book_popup");
+
+     // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == reset) {
+            reset.style.display = "none";
+        }
+    }
+
+    //stepper 
+    $(window).resize(function(){
+        if($(window).width() < 600){
+            var fff = $(".sq").width() - 6;
+            $(".tri").css("left",fff + "px");
+
+            var ffff = $(".sq2").width() - 6;
+            $(".tri2").css("left",ffff + "px");
+
+            $(window).resize(function(){
+                var ffff = $(".sq").width() - 6;
+                $(".tri").css("left",ffff + "px");
+
+                var fff = $(".sq2").width() - 6;
+                $(".tri2").css("left",fff + "px");
+            });
+        }else{
+            var asdf = $(".sq").width() - 14;
+            $(".tri").css("left",asdf + "px");
+
+            var asd = $(".sq2").width() - 14;
+            $(".tri2").css("left",asd + "px");
+
+            $(window).resize(function(){
+                var asdf = $(".sq").width() - 14;
+                $(".tri").css("left",asdf + "px");
+
+                var asd = $(".sq2").width() - 14;
+                $(".tri2").css("left",asd + "px");
+            })
+        }
+    });
+    $(document).ready(function(){
+        if($(window).width() < 600){
+            var fff = $(".sq").width() - 6;
+            $(".tri").css("left",fff + "px");
+
+            var ffff = $(".sq2").width() - 6;
+            $(".tri2").css("left",ffff + "px");
+        }else{
+            var asdf = $(".sq").width() - 14;
+            $(".tri").css("left",asdf + "px");
+
+            var asd = $(".sq2").width() - 14;
+            $(".tri2").css("left",asd + "px");
+        }
+        
+    });
+
+    //main activity
+    $(document).ready(function(){
+        $(".btn_next button").click(function(){
+            $(".date_time").css("display","none")
+            $(".upload").css("display","flex");
+
+            $(".sq2").css("color", "#fff");
+            $(".sq2").addClass("active");
+            $(".tri2").addClass("active");
+            $(".sq2").removeClass("inactive");
+            $(".tri2").removeClass("inactive");
+
+            $(".sq").css("color","#2D468D");
+            $(".sq").addClass("inactive");
+            $(".tri").addClass("inactive");
+            $(".sq").removeClass("active");
+            $(".tri").removeClass("active");
+
+            //to first step
+            $(".sq_tri").click(function(){
+                $(".upload").css("display","none");
+                $(".date_time").css("display","block");
+
+                $(".sq2").css("color", "rgba(45, 70, 141, 0.3)");
+                $(".sq2").addClass("inactive");
+                $(".tri2").addClass("inactive");
+                $(".sq2").removeClass("active");
+                $(".tri2").removeClass("active");
+
+                $(".sq").css("color","#fff");
+                $(".sq").addClass("active");
+                $(".tri").addClass("active");
+                $(".sq").removeClass("inactive");
+                $(".tri").removeClass("inactive");
+            })
+        });
+        
+        $(".group_back").click(function(){
+            $(".upload").css("display","none");
+            $(".date_time").css("display","block");
+
+            $(".sq2").css("color", "rgba(45, 70, 141, 0.3)");
+            $(".sq2").addClass("inactive");
+            $(".tri2").addClass("inactive");
+            $(".sq2").removeClass("active");
+            $(".tri2").removeClass("active");
+
+            $(".sq").css("color","#fff");
+            $(".sq").addClass("active");
+            $(".tri").addClass("active");
+            $(".sq").removeClass("inactive");
+            $(".tri").removeClass("inactive");
+        });
+
+        $(".group_next").click(function(){
+            $(".upload").css("display","none");
+            $(".confirm").css("display","block");
+
+            $(".sq2").css("color", "#2D468D");
+            $(".sq2").addClass("inactive");
+            $(".tri2").addClass("inactive");
+            $(".sq2").removeClass("active");
+            $(".tri2").removeClass("active");
+
+            $(".sq_tri3").css("color","#fff");
+            $(".sq_tri3").addClass("active");
+            $(".sq_tri3").removeClass("inactive");
+
+            //to second step
+            $(".sq_tri2").click(function(){
+                $(".date_time").css("display","none")
+                $(".confirm").css("display","none")
+                $(".upload").css("display","flex");
+
+                $(".sq2").css("color", "#fff");
+                $(".sq2").addClass("active");
+                $(".tri2").addClass("active");
+                $(".sq2").removeClass("inactive");
+                $(".tri2").removeClass("inactive");
+
+                $(".sq_tri3").css("color","rgba(45, 70, 141, 0.3)");
+                $(".sq_tri3").addClass("inactive");
+                $(".sq_tri3").removeClass("active");
+            })
+        });
+    })
+</script>
+
+<!-- calendar script -->
+<script>
+    var themonth = 1;
+    renderCal(themonth);
+    
+    $('.minusmonth').click(function(){
+        themonth += -1;
+        renderCal(themonth);
+    });
+    
+    $('.addmonth').click(function(){
+        themonth += 1;
+        renderCal(themonth);
+    });
+    
+    function renderCal(themonth){
+        $('.calendar li').remove();
+        $('.calendar ul').append('<li>M</li><li>T</li><li>W</li><li>T</li><li>F</li><li>S</li> <li>S</li>');
+        var d = new Date(),
+            currentMonth = d.getMonth()+themonth, // get this month
+            days = numDays(currentMonth,d.getYear()), // get number of days in the month
+            fDay = firstDay(currentMonth,d.getYear())-1, // find what day of the week the 1st lands on
+            months = ['January','February','March','April','May','June','July','August','September','October','November','December']; // month names
+        
+        $('.calendar p.monthname').text(months[currentMonth-1]+ " " + "2021"); // add month name to calendar
+        
+        for (var i=0;i<fDay-1;i++) { // place the first day of the month in the correct position
+            $('<li class="empty">&nbsp;</li>').appendTo('.calendar ul');
+        }
+        
+        for (var i = 1;i<=days;i++) { // write out the days
+            $('<li>'+i+'</li>').appendTo('.calendar ul');
+        }
+        
+        function firstDay(month,year) {
+            return new Date(year,month,1).getDay();
+        }
+        
+        function numDays(month,year) {
+            return new Date(year,month,0).getDate();
+        }
+        
+        $('.calendar li').click(function(){ 
+            $('.calendar li').removeClass('active');
+            $(this).addClass('active');
+
+            if($(window).width() < 1023){
+                $(".date").css("width","100%");
+            }
+            $(".time").css("display","flex");
+        });
+    }
+</script>
+</html>

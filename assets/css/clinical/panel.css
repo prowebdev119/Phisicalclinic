@@ -1,0 +1,28 @@
+.clinical_right {
+    background-image: url("../../images/clinical/clinical.png");
+    height: 100vh;
+    background-size: cover;
+}
+.box {
+    background-color: white;
+    width: 448px;
+    height: 384px;
+    margin: auto;
+    box-shadow: 0px 4px 25px rgb(45 70 141 / 25%);
+}
+.inbox {
+    margin: auto;
+    text-align: center;
+    line-height: 3;
+    font-size: 22px;
+    color: #2D468D;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.inbox div {
+    line-height: 2;
+    padding-left: 10%;
+    padding-right: 10%;
+}

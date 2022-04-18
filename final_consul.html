@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lower Book (final)</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" type="text/css" href="assets/css/common.css"> -->
+    <link rel="stylesheet" type="text/css" href="assets/css/final_consul.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+</head>
+<body>
+    <!-- header section start -->
+    <header>
+        <div class="back">
+            <img src="assets/images/back_final.png">
+        </div>
+        <p>
+            Your Lower Back Program
+        </p>
+    </header>
+    <div class="main">
+        <div class="consult_popup">
+            <p class="popup_title">Thank you for booking a consultation with us</p>
+            <p class="popup_text">This will help us tailor your program to your needs.</p>
+            <p class="popup_text2">Please find below booking details.</p>
+        </div>
+        <div class="booking_popup">
+            <p class="booking_title">Your booking</p>
+            <div class="booking_detail">
+                <img src="assets/images/calendar.png">
+                <p>April 17</p>
+            </div>
+            <div class="booking_detail">
+                <img src="assets/images/clock.png">
+                <p>11:00 am</p>
+            </div>
+            <div class="booking_detail booking_doc">
+                <img src="assets/images/document.png">
+                <p>Doc./certs</p>
+            </div>
+            <button>Added to Calendar</button>
+        </div>
+    </div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".back img").click(function(){
+            window.location.href = "landing.html";
+        });
+    });
+</script>
+</html>

@@ -1,0 +1,187 @@
+.clinical_right{
+    /* background-color: #E5E5E5; */
+    display: block;
+    height: 100%;
+}
+.options{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 4rem;
+    height: 3rem;
+}
+
+.date{
+    letter-spacing: -5px;
+    filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.25));
+    margin-left: 2rem;
+}
+.date button{
+    border: 0px;
+    border-right: 2px solid #EFEFF4;
+    border-radius: 0;
+    height: 30px;   
+    font-size: 12px;
+    font-weight: bold;
+    color: #728094;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: white;
+}
+.date .prev{
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.date .next{
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-right: 0;
+}
+.patients{
+    display: flex;
+    flex-direction: row;
+    filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.25));
+    margin-right: 2rem;
+}
+.patients select{
+    width: 200px;
+    border: 0px;
+    border-right: 2px solid #EFEFF4;
+    border-radius: 0;
+    height: 30px;   
+    font-size: 12px;
+    font-weight: bold;
+    color: #728094;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: white;
+}
+.panel{
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+.time{
+    width: 5%;
+    border-bottom: 2px solid #DEE3E7;
+    position: relative;
+}
+.schedule{
+    position: relative;
+    width: 95%;
+    background-color: white;
+    border-bottom: 2px solid #DEE3E7;
+}
+.time_block{
+    width: 100%;
+    height: 59px;
+    border-top: 2px solid #DEE3E7;
+    color: #2D468D;
+    text-align: end;
+    line-height: 1;
+}
+.time_block span{
+    font-weight: bold;
+    font-size: 12px;
+}
+.background{
+    width: 100%;
+    position: absolute;
+}
+.inline{
+    display: flex;
+}
+.line{
+    width: 14.2%;
+    border-top: 1px solid #DEE3E7;
+    border-right: 2px solid #DEE3E7;
+    height: 14px;
+}
+.lineTopBorder1{
+    border-top: 2px solid #DEE3E7;
+    width: 100%;
+    height: 4px;
+}
+.lineTopBorder{
+    width: 14.2%;
+    border-top: 2px solid #DEE3E7;
+    border-right: 2px solid #DEE3E7;
+    height: 14px;
+}
+.timeline{
+    width: 100%;
+    display: flex;
+    z-index: 1;
+    position: absolute;
+}
+.timeline1{
+    width: 14.2%;
+    margin-left: 0.5px;
+    position: relative;
+}
+.box{
+    width: 100%;
+    height: 61px;
+    color: #2D468D;
+    position: absolute;
+}
+.black{
+    background-image: url("../../images/clinical/back_image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box .content{
+    width: 95%;
+    height: 95%;
+    margin-left: 2%;
+    border-radius: 5px;
+    font-size: 8px;
+    line-height: 1.7;
+}
+.pink{
+    background-color: #FF9CBB;
+}
+.skyBlue{
+    background-color: #B4DFF2;
+}
+.green{
+    background-color: #6BD5CB;
+}
+.yellow{
+    background-color: #FFBF69;
+}
+.purple{
+    background-color: #B39DDB;
+}
+.boxTime{
+    margin-left: 10%;
+    padding-top: 8px;
+}
+.boxName{
+    margin-left: 10%;
+    font-weight: bold;
+}
+.boxContent{
+    margin-left: 10%;
+}
+
+.mouseTime{
+    position: absolute;
+    color: #FF8F2F;
+    font-size: 12px;
+    font-weight: bold;
+    border: 2px solid;
+    border-radius: 12px;
+    padding-left: 5px;
+    padding-right: 5px;    
+    right: 0;
+}
+.mouseLine{
+    margin-top: 1px;
+    height: 2px;
+    border: 0;
+    background-color: #FF8F2F;
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+}

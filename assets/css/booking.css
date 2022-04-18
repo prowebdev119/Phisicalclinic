@@ -1,0 +1,455 @@
+:root {
+    --blue: #2d468d;
+    --orange: #ff8f2f;
+    --lightblue: #5a95cb;
+  }
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: #f8f8f8;
+}
+.text-center {
+    text-align: center!important;
+}
+.icon_cart {
+    position: relative;
+}
+.icon_cart span {
+    position: absolute;
+    background-color: #FF8F2F;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -10px;
+    right: -10px;
+}
+main {
+    width: 87.5%;
+    margin: 0 auto;
+    padding-top: 136px;
+    padding-bottom: 40px;
+}
+.h-1 {
+    font-size: 30px;
+    font-weight: normal;
+    color: var(--blue);
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+.stepper-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 50px auto;
+}
+.stepper-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+.stepper-item::before {
+    position: absolute;
+    content: "";
+    border-bottom: 1px solid var(--blue);
+    width: 100%;
+    top: calc((100% - 25px) / 2);
+    left: -50%;
+    z-index: 2;
+} 
+.stepper-item::after {
+    position: absolute;
+    content: "";
+    border-bottom: 1px solid var(--blue);
+    width: 100%;
+    top: calc((100% - 25px) / 2);
+    left: 50%;
+    z-index: 2;
+} 
+.stepper-item .step-counter {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 66px;
+    height: 66px;
+    font-size: 20px;
+    background-color: white;
+    margin-bottom: 16px;
+    cursor: pointer;
+} 
+.stepper-item .step-name {
+    font-style: normal;
+    font-weight: 300;
+    color: var(--blue);
+}  
+.stepper-item.item-completed .step-counter {
+    background-color: white;
+    border: 1px solid var(--blue);
+    color: var(--blue);
+    box-shadow: 0px 4px 25px rgba(45, 70, 141, 0.25);
+}
+.stepper-item.item-active .step-counter {
+    background-color: var(--orange);
+    border: 1px solid var(--orange);
+    color: white;
+    box-shadow: 0px 4px 25px rgba(45, 70, 141, 0.25);
+}
+
+.stepper-item:not(.item-completed):not(.item-active) .step-counter {
+    background-color: white;
+    border: 1px solid rgba(45, 70, 141, 0.5);
+    color: rgba(45, 70, 141, 0.5);
+}
+.stepper-item:not(.item-completed):not(.item-active) .step-name {
+    color: rgba(45, 70, 141, 0.5);
+}
+.stepper-item.item-completed::after {
+    position: absolute;
+    content: "";
+    border-bottom: 1px solid var(--blue);
+    width: 100%;
+    top: calc((100% - 25px) / 2);
+    left: 50%;
+    z-index: 3;
+}
+.stepper-item:first-child::before {
+    content: none;
+}
+.stepper-item:last-child::after {
+    content: none;
+}
+.flex-1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+.flex-1 > div {
+    display: flex;
+    align-items: center;
+    column-gap: 25px;
+}
+.flex-1 p {
+    margin: 0;
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--blue);
+}
+.flex-1 img {
+    height: 25px;
+}
+.calender-grid {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.calender-grid .date {
+    width: 55px;
+    height: 50px;
+    border: 1px solid var(--lightblue);
+    box-sizing: border-box;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 14px;
+    cursor: pointer;
+}
+.calender-grid .date > p {
+    text-align: center;
+}
+.calender-grid .date.active, .calender-grid .date:hover {
+    background-color: var(--blue);
+    border: 1px solid var(--blue);
+}
+.calender-grid .date.active p, .calender-grid .date:hover p {
+    color: white;
+}
+.calender-grid .date p {
+    margin: 0;
+    color: var(--lightblue);
+}
+.calender-grid .date p:first-child {
+    text-transform: uppercase;
+}
+.calender-grid .prev button, .calender-grid .next button {
+    border: 0;
+    background-color: transparent;
+    padding: 0;
+}
+.calender-grid .prev button:disabled, .calender-grid .next button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+.calender-grid .splide__arrow {
+    position: absolute;
+    top: 50%;
+}
+.splide {
+    margin: 0 auto 25px auto;
+}
+.splide .splide__slide {
+    display: flex;
+    justify-content: center;
+}
+.calender-grid .splide__arrow--prev {
+    left: -2.5rem;
+    transform: scaleX(-1) translateY(-50%);
+}
+.calender-grid .splide__arrow--next {
+    right: -2.5rem;
+    transform: translateY(-50%);
+}
+.calender-grid .prev img, .calender-grid .next img {
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.para-1 {
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--blue);
+    margin-top: 0;
+}
+.para-2 {
+    font-weight: normal;
+    font-size: 20px;
+    color: var(--blue);
+    margin-top: 0;
+    margin-bottom: 100px;
+}
+.flex-2 {
+    display: flex;
+    align-items: start;
+    margin-bottom: 25px;
+    flex-direction: column;
+    row-gap: 5px;
+}
+.flex-2 > div:last-child {
+    display: flex;
+    align-items: center;
+}
+.flex-2 p {
+    margin: 0;
+    color: var(--blue);
+}
+.flex-2 .box {
+    width: 76px;
+    height: 39px;
+    border: 1px solid #cccccc;
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.flex-2 .box:hover {
+    color: white;
+    background-color: var(--blue);
+}
+.flex-2 .box.active {
+    width: 76px;
+    height: 39px;
+    border: 1px solid var(--blue);
+    font-weight: 600;
+    font-size: 14px;
+    color: white;
+    background-color: var(--blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flex-3 p {
+    margin: 0;
+}
+.flex-3 button {
+    width: 160px;
+    height: 50px;
+    background-color: var(--orange);
+    color: white;
+    border-radius: 5px;
+    filter: drop-shadow(0px 4px 25px rgba(0, 0, 0, 0.25));
+    border: 1px solid var(--orange);
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+.flex-3 > div:first-child > button {
+    width: 160px;
+    height: 50px;
+    background-color: white;
+    color: var(--orange);
+    border-radius: 5px;
+    filter: drop-shadow(0px 4px 25px rgba(0, 0, 0, 0.25));
+    border: 1px solid var(--orange);
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+.flex-3 > div:last-child > button {
+    width: 160px;
+    height: 50px;
+    background-color: var(--orange);
+    color: white;
+    border-radius: 5px;
+    filter: drop-shadow(0px 4px 25px rgba(0, 0, 0, 0.25));
+    border: 1px solid var(--orange);
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+.tabcontent {
+    display: none;
+    -webkit-animation: fadeEffect 0.5s;
+    animation: fadeEffect 0.5s;
+}
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+.flex-4 {
+    display: flex;
+    align-items: center;
+    column-gap: 25px;
+    margin-bottom: 75px;
+    justify-content: center;
+}
+.flex-4 p {
+    margin: 0;
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--blue);
+}
+.flex-5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    column-gap: 25px;
+    margin-bottom: 75px;
+    justify-content: center;
+}
+.flex-5 > div {
+    display: flex;
+    column-gap: 10px;
+    width: 225px;
+}
+.flex-5 > div > img {
+    height: 32px;
+}
+.flex-5 > div:not(:last-child) {
+    margin-bottom: 50px;
+}
+.flex-5 p {
+    margin: 0;
+    font-weight: normal;
+    font-size: 20px;
+    color: var(--blue);
+}
+.flex-7 {
+    display: flex;
+    justify-content: center;
+}
+.flex-7 button {
+    width: 160px;
+    height: 50px;
+    background-color: var(--orange);
+    color: white;
+    border-radius: 5px;
+    filter: drop-shadow(0px 4px 25px rgba(0, 0, 0, 0.25));
+    border: 1px solid var(--orange);
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+@media only screen and (max-width: 320px) {
+    .h-1 {
+        font-size: 28px;
+    }
+    .flex-2 {
+        align-items: center;
+    }
+    .flex-4 > div > p, .para-1 {
+        text-align: center;
+    }
+    .stepper-item .step-counter {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    } 
+    .stepper-item .step-name {
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .hsm {
+        display: none!important;
+    }
+    .container-1 {
+        padding: 25px;
+        background-color: white;
+    }
+    .stepper-item {
+        font-size: 12px;
+    }
+    .para-2 {
+        text-align: center;
+    }
+    .flex-3 {
+        display: flex;
+        flex-direction: column;
+        row-gap: 25px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .flex-3 > div:first-child {
+        order: 2;
+    }
+    .flex-3 > div:last-child {
+        order: 1;
+    }
+    .flex-6 {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+@media only screen and (min-width: 769px) {
+    .hlg {
+        display: none!important;
+    }
+    .container-1 {
+        padding: 50px;
+        background-color: white;
+    }
+    .stepper-wrapper {
+        width: 50%;
+    } 
+    .stepper-item .step-name {
+        font-size: 16px;
+    } 
+    .flex-3 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .flex-6 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

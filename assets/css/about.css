@@ -1,0 +1,592 @@
+/* hero section start */
+.hero{
+    /* background-image: url("../images/aboutus.png"); */
+    /* height: 768px; */
+    /* background-position: 0 86px; */
+    /* background-repeat: no-repeat; */
+    /* background-size: 100%; */
+    background-color: #2D468D;
+    position: relative;
+}
+.hero img{
+    padding-top: 86px;
+    width: 100%;
+    margin-bottom: -7px;
+}
+.hero img:nth-child(2), .hero img:nth-child(3){
+    display: none;
+}
+.hero_content{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 50px;
+    color: #B2D3EF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    max-width: 1024px;
+    margin: 0 auto;
+    height: 100%;
+}
+p{
+    margin: 0%;
+}
+/* bringing section start  */
+.bring{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 90px;
+}
+.bring_title{
+    margin-top: 80px;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #2D468D;
+}
+.bring_text{
+    margin-top: 20px;
+    max-width: 600px;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    color: #2D468D;
+}
+/* story section start  */
+.story{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.story_left{
+    width: 50%;
+}
+.story_left img{
+    width: 100%;
+    height: 100%;
+}
+.story_right{
+    padding: 0 60px;
+    width: calc(50% - 60px);
+}
+.story_title{
+    font-size: 20px;
+    line-height: 35px;
+    color: #2D468D;
+}
+.story_text{
+    margin-top: 40px;
+    font-size: 16px;
+    line-height: 30px;
+    color: #2D468D;
+}
+/* injury section start */
+.injury{
+    background-color: #5A95CB;
+    margin: 217px 0;
+}
+.injury_up{
+    width: 50%;
+    margin-left: 50%;
+}
+.injury_up img{
+    width: 100%;
+    margin-top: -25%;
+}
+.injury_center{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+.injury_center p{
+    font-size: 20px;
+    line-height: 30px;
+    color: #fff;
+    max-width: 630px;
+    text-align: center;
+    padding: 60px 0;
+}
+.injury_do{
+    width: 50%;
+}
+.injury_do img{
+    width: 100%;
+    margin-bottom: -25%;
+}
+
+
+/* approach section start  */
+.approach{
+    margin: 0 0 74px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.approach_left{
+    width: calc(50% - 80px);
+    padding: 0 40px;
+}
+.approach_title{
+    font-size: 20px;
+    line-height: 35px;
+    color: #2D468D;
+}
+.approach_text{
+    margin-top: 40px;
+    font-size: 16px;
+    line-height: 30px;
+    color: #2D468D;
+}
+.approach_right{
+    width: 50%;
+}
+.approach_right img{
+    width: 100%;
+    height: 100%;
+}
+/* belief section start */
+.belief{
+    background-color: #2D468D;
+}
+.belief_title{
+    padding-top: 70px;
+    font-size: 24px;
+    line-height: 35px;
+    text-align: center;
+    color: #B2D3EF;
+}
+.belief_tab{
+    display: flex;
+    padding: 126px 140px 160px 140px;
+}
+.tabs{
+    width: 50%;
+    font-size: 20px;
+    line-height: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.tabs div:first-child a{
+    color: #FF8F2F;
+}
+.tabs div a{
+    padding-bottom: 40px;
+}
+.tab_contents{
+    width: 50%;
+}
+.contents{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contents p{
+    margin-top: 53px;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    color: #B2D3EF;
+}
+.tab_contents div img{
+    width: 120px;
+    height: 120px;
+}
+.belief_mob{
+    display: none;
+    padding: 0 40px 118px 40px;
+}
+.belief_mob .mob_tabs:first-child .mob_title{
+    color: #FF8F2F;
+}
+.mob_title{
+    margin-top: 60px;
+    font-size: 20px;
+    line-height: 35px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.mob_title img{
+    width: 34px;
+}
+.mob_contents{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mob_contents img{
+    width: 120px;
+}
+.mob_contents p{
+    margin-top: 34px;
+    max-width: 521px;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    color: #B2D3EF;
+}
+
+
+
+/* vision section start  */
+
+.how{
+    height: 660px;
+    background-color: #F8F8F8;
+}
+.how .testimal_title{
+    width: 100%;
+    text-align: center;
+    color: #2D468D;
+}
+.how-template .item {
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; font-size:70px; color:#fff;
+}
+.shadow-effect{
+    width: 326px;
+    margin: auto;
+}
+.testimonials{
+	position: relative;
+	padding-top: 90px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.testimonials:after{
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: 30%;
+}
+#customers-testimonials .item-details{
+		color: #2D468D;
+		margin-top: 30px;
+		text-align: left;
+        text-align: center;
+}
+#customers-testimonials .item-details .title{
+    font-size: 20px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+}
+#customers-testimonials .item-details p{
+	font-size: 14px;
+    line-height: 2;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+#customers-testimonials .item {
+			text-align: center;
+}
+#customers-testimonials .item-image{
+    background-color: #5A95CB;
+    text-align: center;
+    height: 200px;
+}
+#customers-testimonials .item-image img{
+    height: 100%;
+    width: auto;
+    margin: auto;
+}
+.owl-carousel .owl-nav [class*='owl-'] {
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+.owl-carousel .owl-nav [class*='owl-'].disabled:hover {
+  background-color: #D6D6D6;
+}
+.owl-carousel {
+  position: relative;
+}
+.owl-carousel .owl-next,
+.owl-carousel .owl-prev {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    font-size: 20px;
+    color: #fff;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+.owl-carousel .owl-prev {
+  left: -30px;
+}
+.owl-carousel .owl-next {
+  right: -25px;
+}
+.owl-dots {
+    text-align: center;
+    padding-top: 50px;
+}
+.owl-dots button.owl-dot {
+width: 15px;
+height: 15px;
+border-radius: 50%;
+display: inline-block;
+background: #C4C4C4;
+margin: 0 10px;
+}
+.owl-dots button.owl-dot.active {
+    background-color: #FF8F2F;
+    
+}
+.owl-dots button.owl-dot:focus {
+    outline: none;
+}
+.how-section {
+    max-height: 0;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: .3s;
+}
+.how-section.show {
+    max-height: none;
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+/* moving section start */
+.moving{
+    background-color: #B2D4EF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.moving_title{
+    margin-top: 60px;
+    font-size: 20px;
+    line-height: 35px;
+    text-align: center;
+    color: #2D468D;
+}
+.moving_text{
+    margin-top: 40px;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    color: #2D468D;
+    max-width: 744px;
+}
+.moving button{
+    margin-top: 40px;
+    margin-bottom: 120px;
+    width: 160px;
+    height: 50px;
+    font-size: 14px;
+    line-height: 25px;
+    background: #FF8F2F;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
+}
+@media(max-width: 1023px){
+    .hero img:nth-child(2){
+        display: block;
+    }
+    .hero img, .hero img:nth-child(3){
+        display: none;
+    }
+    .bring_text{
+        max-width: 100%;
+    }
+    .bring{
+        margin-bottom: 67px;
+        padding: 0 40px;
+    }
+    .story{
+        flex-direction: column;
+    }
+    .story_left{
+        width: 100%;
+    }
+    .story_right{
+        width: calc(100% - 80px);
+        padding: 0 40px;
+    }
+    .story_title{
+        margin-top: 34px;
+    }
+    .story_text{
+        margin-top: 40px;
+        padding-top: 0;
+    }
+    .approach{
+        flex-direction: column;
+        margin: 0;
+    }
+    .approach_left{
+        width: calc(100% - 80px);
+        padding: 0 40px;
+    }
+    .approach_right{
+        width: 100%;
+        margin-top: 34px;
+        margin-bottom: -10px;
+    }
+    .moving_title{
+        margin-top: 60px;
+    }
+    .moving_text{
+        margin-top: 40px;
+        max-width: 520px;
+    }
+    .moving button{
+        margin-top: 40px;
+        margin-bottom: 58px;
+    }
+    .injury_up{
+        width: 60%;
+        margin-left: 40%;
+    }
+    .injury_do{
+        width: 60%;
+    }
+    .injury_center p{
+        padding:90px 40px
+    }
+    .belief_tab{
+        display: none;
+    }
+    .belief_mob{
+        display: block;
+    }
+
+}
+@media(max-width: 599px){
+    .hero img:nth-child(3){
+        display: block;
+    }
+    .hero img, .hero img:nth-child(2){
+        display: none;
+    }
+    .hero_content{
+        font-size: 18px;
+    }
+    .bring{
+        margin-bottom: 37px;
+        padding: 0 20px;
+    }
+    .bring_title{
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+    .bring_text{
+        margin-top: 10px;
+        font-size: 12px;
+        line-height: 22px;
+    }
+    .story_right{
+        width: calc(100% - 40px);
+        padding: 0 20px;
+    }
+    .story_title{
+        margin-top: 17px;
+        font-size: 16px;
+        line-height: 35px;
+    }
+    .story_text{
+        margin-top: 20px;
+        font-size: 12px;
+        line-height: 22px;
+    }
+    .approach_title{
+        font-size: 16px;
+        line-height: 35px;
+    }
+    .approach_text{
+        margin-top: 20px;
+        font-size: 12px;
+        line-height: 22px;
+    }
+    .approach_left{
+        width: calc(100% - 40px);
+        padding: 0 20px;
+    }
+    .approach_right{
+        margin-top: 20px;
+    }
+    .belief_title{
+        padding-top: 22px;
+        font-size: 16px;
+        line-height: 35px;
+    }
+    .belief_mob{
+        padding: 20px 20px 40px 20px;
+    }
+    .mob_title{
+        font-size: 16px;
+        line-height: 35px;
+        margin-top: 15px;
+    }
+    .mob_contents img{
+        width: 80px;
+    }
+    .mob_contents p{
+        font-size: 12px;
+        line-height: 22px;
+    }
+
+
+    .moving_title{
+        margin-top: 66px;
+        font-size: 16px;
+        line-height: 35px;
+    }
+    .moving_text{
+        margin-top: 20px;
+        font-size: 12px;
+        line-height: 22px;
+    }
+    .moving button{
+        margin-top: 40px;
+        margin-bottom: 66px;
+        max-width: 280px;
+    }
+    .injury{
+        margin-top: 170px;
+        margin-bottom: 170px;
+    }
+    .injury_up{
+        width: 100%;
+        margin-left: 0;
+    }
+    .injury_center p{
+        font-size: 16px;
+        line-height: 28px;
+        padding: 52px 20px;
+    }
+    .injury_do{
+        width: 100%;
+    }
+    .shadow-effect {
+        width: 250px;
+    }
+}

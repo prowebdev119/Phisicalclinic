@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Knee Questions</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" type="text/css" href="assets/css/common.css"> -->
+    <link rel="stylesheet" type="text/css" href="assets/css/knee-question.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+</head>
+<body>
+    <!-- header section start -->
+    <header>
+        <div class="header_top">
+            <img class="back" src="assets/images/back.png">
+            <p>Health Check Questionnaire</p>
+            <img class="close" src="assets/images/close.png">
+        </div>
+        <div class="header_footer">
+            <div class="real_or"></div>
+        </div>
+    </header>
+    <!-- main section  -->
+    <main class="main container">
+        <div class="main_content">
+            <div class="question_content">
+                <div class="flex-1">
+                    <div>
+                        <p>How would you describe your pain?</p>
+                        <p>Select all that apply.</p>
+                    </div>
+                    <div>
+                        <div class="grid-1">
+                            <div class="badge-sm q1_item">
+                                <img src="assets/images/q11111.png">
+                                <p>Sharp</p>
+                            </div>
+                            <div class="badge-sm q1_item">
+                                <img src="assets/images/q12.png">
+                                <p>Dull</p>
+                            </div>
+                            <div class="badge-sm q1_item">
+                                <img src="assets/images/q13.png">
+                                <p>Intense</p>
+                            </div>
+                            <div class="badge-sm q1_item">
+                                <img src="assets/images/q14.png">
+                                <p>Burning</p>
+                            </div>
+                            <div class="badge-sm q1_item">
+                                <img src="assets/images/q15.png">
+                                <p>Prickly</p>
+                            </div>
+                            <div class="badge-sm q1_item">
+                                <img src="assets/images/q16.png">
+                                <p>Stabbing</p>
+                            </div>
+                            <div class="badge-sm q1_item">
+                                <img src="assets/images/q17.png">
+                                <p>Shooting</p>
+                            </div>
+                            <div class="badge-sm q1_item">
+                                <img src="assets/images/q18.png">
+                                <p>Cramping</p>
+                            </div>
+                            <div class="badge-sm q1_item">
+                                <img src="assets/images/q19.png">
+                                <p>Gnawing</p>
+                            </div>
+                            <div class="badge-sm q1_item">
+                                <img src="assets/images/q110.png">
+                                <p>Gripping</p>
+                            </div>
+                            <div class="badge-sm q1_item">
+                                <img src="assets/images/q111.png">
+                                <p>Pressure</p>
+                            </div>
+                            <div class="badge-sm q1_item">
+                                <img src="assets/images/q112.png">
+                                <p>Heavy</p>
+                            </div>
+                            <div class="badge-sm q1_item">
+                                <img src="assets/images/q113.png">
+                                <p>Aching</p>
+                            </div>
+                            <div class="badge-sm q1_item">
+                                <img src="assets/images/q114.png">
+                                <p>Tender</p>
+                            </div>
+                            <div class="badge-sm q1_item">
+                                <img src="assets/images/q115.png">
+                                <p>Stinging</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="question_content">
+                <div class="flex-1">
+                    <div>
+                        <p>Can you place weight on the hurting knee?</p>
+                        <p>Select the one that most applies.</p>
+                    </div>
+                    <div>                
+                        <div class="grid-4">
+                            <div>
+                                <div class="badge-lg q2_item">
+                                    <img src="assets/images/q31.png">
+                                    <p>Yes</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="badge-lg q2_item">
+                                    <img src="assets/images/q32.png">
+                                    <p>No</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="badge-lg q2_item">
+                                    <img src="assets/images/q33.png">
+                                    <p>Not Sure</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="question_content">
+                <div class="flex-1">
+                    <div>
+                        <p>Do you hear popping sounds when flexing/extending your knee?</p>
+                        <p>Select the one that most applies.</p>
+                    </div>
+                    <div>                
+                        <div class="grid-4">
+                            <div>
+                                <div class="badge-lg q3_item">
+                                    <img src="assets/images/q31.png">
+                                    <p>Yes</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="badge-lg q3_item">
+                                    <img src="assets/images/q32.png">
+                                    <p>No</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="badge-lg q3_item">
+                                    <img src="assets/images/q33.png">
+                                    <p>Not Sure</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="question_content">
+                <div class="flex-1">
+                    <div>
+                        <p>How often does your knee pop when flexing/extending your knee?</p>
+                        <p>Use the slider to indicate the exact frequency.</p>
+                    </div>
+                    <div>                
+                        <div class="flex-2">
+                            <div class="rangeslider">
+                                <input type="range" min="0" max="2" value="0" class="myslider" id="sliderRange-1">
+                                <img src="assets/images/range.png"/>
+                            </div>
+                            <div id="rangename-1" class="rangename">
+                                <div class="rangename_item">
+                                    <div class="active">Occasionally</div>
+                                </div>
+                                <div class="rangename_item">
+                                    <div>Sometimes</div>
+                                </div>
+                                <div class="rangename_item">
+                                    <div>Every time</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="question_content">
+                <div class="flex-1">
+                    <div>
+                        <p>Have you noticed any swelling?</p>
+                        <p>Select the one that most applies.</p>
+                    </div>
+                    <div>                
+                        <div class="grid-4">
+                            <div>
+                                <div class="badge-lg q5_item">
+                                    <img src="assets/images/q31.png">
+                                    <p>Yes</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="badge-lg q5_item">
+                                    <img src="assets/images/q32.png">
+                                    <p>No</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="badge-lg q5_item">
+                                    <img src="assets/images/q33.png">
+                                    <p>Not Sure</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="question_content">
+                <div class="flex-1">
+                    <div>
+                        <p>Have you noticed any difference in temperature between swelling/unswelling knee?</p>
+                        <p>Select the one that most applies.</p>
+                    </div>
+                    <div>                
+                        <div class="grid-4">
+                            <div>
+                                <div class="badge-lg q6_item">
+                                    <img src="assets/images/q31.png">
+                                    <p>Yes</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="badge-lg q6_item">
+                                    <img src="assets/images/q32.png">
+                                    <p>No</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="badge-lg q6_item">
+                                    <img src="assets/images/q33.png">
+                                    <p>Not Sure</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="question_content">
+                <div class="flex-1">
+                    <div>
+                        <p>Can you point out the pain spot(s)?</p>
+                    </div>
+                    <div>                
+                        <div><textarea id="textarea-1" class="textarea" oninput="onInput(this);" placeholder="Example: above the knee top the right"></textarea></div>
+                    </div>
+                </div>
+            </div>
+            <div class="question_content">
+                <div class="flex-1">
+                    <div>
+                        <p>Do you feel like your knee is buckled?</p>
+                        <p>Select the one that most applies.</p>
+                    </div>
+                    <div>                
+                        <div class="grid-4">
+                            <div>
+                                <div class="badge-lg q7_item">
+                                    <img src="assets/images/q31.png">
+                                    <p>Yes</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="badge-lg q7_item">
+                                    <img src="assets/images/q32.png">
+                                    <p>No</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="badge-lg q7_item">
+                                    <img src="assets/images/q33.png">
+                                    <p>Not Sure</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="fixed-bottom">
+        <div class="main_btn">
+            <button id="q_back" class="q_back" onclick="plusSlides(-1)">Back</button>
+            <button id="q_next" class="q_next" onclick="plusSlides(1)" disabled>Next</button>
+        </div>
+    </footer>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+     var q_back = document.getElementById("q_back");
+     var q_next = document.getElementById("q_next");
+    //question1
+    var q1_items = document.getElementsByClassName("q1_item");
+    var q1_items_active = 0;
+    for (var i = 0; i < q1_items.length; i++) {
+        q1_items[i].addEventListener("click", function() {
+            this.classList.toggle("q1_item_active");
+            q1_items_active = 0;
+            for (var j = 0; j < q1_items.length; j++) {
+                if(q1_items[j].classList.contains("q1_item_active")) {
+                    q1_items_active += 1;
+                }
+            }
+            if(q1_items_active > 0){
+                q_next.disabled = false;
+            } else if(q1_items_active < 1){
+                q_next.disabled = true;
+            }
+        });
+    }
+
+    //question2
+    var q2_items = document.getElementsByClassName("q2_item");
+    for (var i = 0; i < q2_items.length; i++) {
+        q2_items[i].addEventListener("click", function() {
+            for (var j = 0; j < q2_items.length; j++) {
+                q2_items[j].classList.remove("q2_item_active");
+            }
+            this.classList.add("q2_item_active");
+            q_next.disabled = false;
+        });
+    }
+
+    //question3
+    var q3_items = document.getElementsByClassName("q3_item");
+    for (var i = 0; i < q3_items.length; i++) {
+        q3_items[i].addEventListener("click", function() {
+            for (var j = 0; j < q3_items.length; j++) {
+                q3_items[j].classList.remove("q3_item_active");
+            }
+            this.classList.add("q3_item_active");
+            q_next.disabled = false;
+        });
+    }
+
+    //question4
+    var rangeslider_1 = document.getElementById("sliderRange-1");
+    var rangename_1 = document.getElementById("rangename-1");
+    var rangename_items = document.querySelectorAll("#rangename-1 > .rangename_item");
+    rangeslider_1.oninput = function() {
+        for (var i = 0; i < rangename_items.length; i++) {
+            rangename_items[i].children[0].removeAttribute("class");
+        }
+        q_next.disabled = false;
+        rangename_items[this.value].children[0].classList.add("active");
+    }
+
+    //question5
+    var q5_items = document.getElementsByClassName("q5_item");
+    for (var i = 0; i < q5_items.length; i++) {
+        q5_items[i].addEventListener("click", function() {
+            for (var j = 0; j < q5_items.length; j++) {
+                q5_items[j].classList.remove("q5_item_active");
+            }
+            this.classList.add("q5_item_active");
+            q_next.disabled = false;
+        });
+    }
+
+    //question6
+    var q6_items = document.getElementsByClassName("q6_item");
+    for (var i = 0; i < q6_items.length; i++) {
+        q6_items[i].addEventListener("click", function() {
+            for (var j = 0; j < q6_items.length; j++) {
+                q6_items[j].classList.remove("q6_item_active");
+            }
+            this.classList.add("q6_item_active");
+            q_next.disabled = false;
+        });
+    }
+
+    //question7
+    var q7_items = document.getElementsByClassName("q7_item");
+    for (var i = 0; i < q7_items.length; i++) {
+        q7_items[i].addEventListener("click", function() {
+            for (var j = 0; j < q7_items.length; j++) {
+                q7_items[j].classList.remove("q7_item_active");
+            }
+            this.classList.add("q7_item_active");
+            q_next.disabled = false;
+        });
+    }
+
+    //textarea
+    function onInput(textarea) {
+        var x = textarea.value.toLowerCase();
+        if (x.length > 0) {
+            q_next.disabled = false;
+        } else {
+            q_next.disabled = true;
+        }
+    }
+
+    /* Next & previous buttons */
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("question_content");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+            slides[i].classList.remove("fade");   
+        }
+        slides[slideIndex-1].style.display = "block";
+        slides[slideIndex-1].classList.add("fade");  
+    }
+    /* disabling Next button */
+    q_next.addEventListener("click", function() {
+        if(this.disabled === false){
+            this.disabled = true;
+        }
+    });
+    /* enabling Next button */
+    q_back.addEventListener("click", function() {
+        if(q_next.disabled === true){
+            q_next.disabled = false;
+        }
+    });
+</script>
+</html>

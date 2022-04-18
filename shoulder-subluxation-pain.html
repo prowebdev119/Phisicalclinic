@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shoulder Subluxation Pain</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" type="text/css" href="assets/css/common.css"> -->
+    <link rel="stylesheet" type="text/css" href="assets/css/shoulder-subluxation-pain.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+</head>
+<body>
+    <!-- header section start -->
+    <header>
+        <div class="header_top">
+            <img class="back" src="assets/images/back.png">
+            <p>Health Check Questionnaire</p>
+            <img class="close" src="assets/images/close.png">
+        </div>
+        <div class="header_footer">
+            <div class="real_or"></div>
+        </div>
+    </header>
+
+    <!-- main section  -->
+    <main class="main container">
+        <div class="main_content">
+            <div class="question_content">
+                <div class="flex-1">
+                    <div>
+                        <p>Can you see any visibly deformed or out-of-place shoulder?</p>
+                        <p>Select the one that most applies.</p>
+                    </div>
+                    <div>                
+                        <div class="grid-4">
+                            <div>
+                                <div class="q1_item">
+                                    <img src="assets/images/q31.png">
+                                    <p>Yes</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="q1_item">
+                                    <img src="assets/images/q32.png">
+                                    <p>No</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="q1_item">
+                                    <img src="assets/images/q33.png">
+                                    <p>Not Sure</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="question_content">
+                <div class="flex-1">
+                    <div>
+                        <p>Do you feel pain in your shoulder?</p>
+                        <p>Select the one that most applies.</p>
+                    </div>
+                    <div>                
+                        <div class="grid-4">
+                            <div>
+                                <div class="q2_item">
+                                    <img src="assets/images/q31.png">
+                                    <p>Yes</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="q2_item">
+                                    <img src="assets/images/q32.png">
+                                    <p>No</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="q2_item">
+                                    <img src="assets/images/q33.png">
+                                    <p>Not Sure</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="question_content">
+                <div class="flex-1">
+                    <div>
+                        <p>Do you feel like an affected shoulderis swollen?</p>
+                        <p>Select the one that most applies.</p>
+                    </div>
+                    <div>                
+                        <div class="grid-4">
+                            <div>
+                                <div class="q3_item">
+                                    <img src="assets/images/q31.png">
+                                    <p>Yes</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="q3_item">
+                                    <img src="assets/images/q32.png">
+                                    <p>No</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="q3_item">
+                                    <img src="assets/images/q33.png">
+                                    <p>Not Sure</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="question_content">
+                <div class="flex-1">
+                    <div>
+                        <p>Do you feel any numbness or tingling, also called paresthesia, along the affected arm?</p>
+                        <p>Select the one that most applies.</p>
+                    </div>
+                    <div>                
+                        <div class="grid-4">
+                            <div>
+                                <div class="q4_item">
+                                    <img src="assets/images/q31.png">
+                                    <p>Yes</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="q4_item">
+                                    <img src="assets/images/q32.png">
+                                    <p>No</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="q4_item">
+                                    <img src="assets/images/q33.png">
+                                    <p>Not Sure</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="fixed-bottom">
+        <div class="main_btn">
+            <button id="q_back" class="q_back" onclick="plusSlides(-1)">Back</button>
+            <button id="q_next" class="q_next" onclick="plusSlides(1)" disabled>Next</button>
+        </div>
+    </footer>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+     var q_back = document.getElementById("q_back");
+     var q_next = document.getElementById("q_next");
+    //question1
+    var q1_items = document.getElementsByClassName("q1_item");
+    for (var i = 0; i < q1_items.length; i++) {
+        q1_items[i].addEventListener("click", function() {
+            for (var j = 0; j < q1_items.length; j++) {
+                q1_items[j].classList.remove("q1_item_active");
+            }
+            this.classList.add("q1_item_active");
+            q_next.disabled = false;
+        });
+    }
+
+    //question2
+    var q2_items = document.getElementsByClassName("q2_item");
+    for (var i = 0; i < q2_items.length; i++) {
+        q2_items[i].addEventListener("click", function() {
+            for (var j = 0; j < q2_items.length; j++) {
+                q2_items[j].classList.remove("q2_item_active");
+            }
+            this.classList.add("q2_item_active");
+            q_next.disabled = false;
+        });
+    }
+
+    //question3
+    var q3_items = document.getElementsByClassName("q3_item");
+    for (var i = 0; i < q3_items.length; i++) {
+        q3_items[i].addEventListener("click", function() {
+            for (var j = 0; j < q3_items.length; j++) {
+                q3_items[j].classList.remove("q3_item_active");
+            }
+            this.classList.add("q3_item_active");
+            q_next.disabled = false;
+        });
+    }
+
+    //question4
+    var q4_items = document.getElementsByClassName("q4_item");
+    for (var i = 0; i < q4_items.length; i++) {
+        q4_items[i].addEventListener("click", function() {
+            for (var j = 0; j < q4_items.length; j++) {
+                q4_items[j].classList.remove("q4_item_active");
+            }
+            this.classList.add("q4_item_active");
+            q_next.disabled = false;
+        });
+    }
+
+    /* Next & previous buttons */
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("question_content");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+            slides[i].classList.remove("fade");   
+        }
+        slides[slideIndex-1].style.display = "block";
+        slides[slideIndex-1].classList.add("fade");  
+    }
+    /* disabling Next button */
+    q_next.addEventListener("click", function() {
+        if(this.disabled === false){
+            this.disabled = true;
+        }
+    });
+    /* enabling Next button */
+    q_back.addEventListener("click", function() {
+        if(q_next.disabled === true){
+            q_next.disabled = false;
+        }
+    });
+</script>
+</html>

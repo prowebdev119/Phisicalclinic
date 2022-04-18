@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Patients</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/css/clinical/common.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/clinical/patients.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="clinical">
+        <!-- left panel -->
+        <aside class="clinical_left">
+            <!-- navbar top -->
+            <div class="top-nav">
+                <a class="navlink_img" href="clinical_panel.html"><img src="assets/images/clinical/white_logo.png" alt=""></a>
+                <a class="navlink" href="availability.html">Availability</a>
+                <a class="navlink" href="consolution.html">Consultations</a>
+                <a class="navlink nav_active" href="patients.html">Patients</a>
+            </div>
+            <!-- navbar bottom -->
+            <div class="bottom-nav">
+                <a class="bottom_link" href="">Account</a>
+                <a class="bottom_link" href="">Log out</a>
+            </div>
+        </aside>
+        <!--  right panel -->
+        <main class="clinical_right">
+            <div class="container-1">
+                <!-- top chips -->
+                <div class="grid-1">
+                    <div>
+                        <div class="chips-container">
+                            <div class="chip chip-1"><span><img src="assets/images/perm_identity_24px.png" alt="" /></span></div>
+                            <div>
+                                <div class="text">
+                                    <span>carrie</span>
+                                    <span>hawkins</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="chips-container">
+                            <div class="chip chip-2"><span><img src="assets/images/perm_identity_24px.png" alt="" /></span></div>
+                            <div>
+                                <div class="text">
+                                    <span>smantha</span>
+                                    <span>burke</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="chips-container">
+                            <div class="chip chip-3"><span><img src="assets/images/perm_identity_24px.png" alt="" /></span></div>
+                            <div>
+                                <div class="text">
+                                    <span>harold</span>
+                                    <span>long</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="chips-container">
+                            <div class="chip chip-4"><span><img src="assets/images/perm_identity_24px.png" alt="" /></span></div>
+                            <div>
+                                <div class="text">
+                                    <span>isaiah</span>
+                                    <span>lopez</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="chips-container">
+                            <div class="chip chip-5"><span><img src="assets/images/perm_identity_24px.png" alt="" /></span></div>
+                            <div>
+                                <div class="text">
+                                    <span>sarah</span>
+                                    <span>stephens</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="chips-container">
+                            <div class="chip chip-6"><span><img src="assets/images/perm_identity_24px.png" alt="" /></span></div>
+                            <div>
+                                <div class="text">
+                                    <span>sameul</span>
+                                    <span>price</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="chips-container">
+                            <div class="chip chip-7"><span><img src="assets/images/perm_identity_24px.png" alt="" /></span></div>
+                            <div>
+                                <div class="text">
+                                    <span>patrica</span>
+                                    <span>wright</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--  image grid -->
+                <ul class="list-1">
+                    <li onclick="open_main();">
+                        <div class="card">
+                            <div class="overlay"></div>
+                            <img src="assets/images/screenshoot-11.png" alt="" />
+                            <div class="content">
+                                <h4>Neck</h4>
+                                <p>See exercises and assessments</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <div class="overlay"></div>
+                            <img src="assets/images/screenshoot-2.png" alt="" />
+                            <div class="content">
+                                <h4>Hips</h4>
+                                <p>See exercises and assessments</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- carrie’s lower back program start -->
+            <div id="container-2" class="container-2">
+                <div class="flex-1">
+                    <div><button onclick="close_main();" class="button-1"><i class="fa fa-chevron-left" aria-hidden="true"></i> <span>Back</span></button></div>
+                    <div><h4 class="heading-1">Carrie’s Lower Back Program</h4></div>
+                    <div class="hidden"><button class="button-1">hidden</button></div>
+                </div>
+                <!--  patient cards start -->
+                <ul class="list-2">
+                    <li>
+                        <a href="questionnaire5.html">
+                            <div class="card">
+                                <img src="assets/images/program.png" alt="" />
+                                <div class="content">
+                                    <h4>patient history</h4>
+                                    <p>See patient’s questionnaires ></p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li onclick="open_container_4();">
+                        <a href="editPatients.html">
+                            <div class="card">
+                                <img src="assets/images/program.png" alt="" />
+                                <div class="content">
+                                    <h4>patient program</h4>
+                                    <p>See patient’s questionnaires ></p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+        </main>
+    </div>
+    <script>
+        var container_2 = document.getElementById("container-2");
+        function open_main() {
+            container_2.style.right = "0%";	
+        }
+        function close_main() {
+            container_2.style.right = "-100%";
+        }
+ 
+    </script>  
+</body>
+</html>

@@ -1,0 +1,179 @@
+.forgot{
+    width: 100%;
+    display: flex;
+    height: 100%;
+}
+.forgot_left{
+    width: 45%;
+    margin-top: 86px;
+    position: relative;
+    background-image: url("../images/login.png");
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+}
+.forgot_left img{
+    width: 100%;
+    height: 100%;
+}
+.forgot_right{
+    background-color: #2D468D;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.forgot_title{
+    margin-top: 230px;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    color: #B2D3EF;
+}
+.forgot_text{
+    margin-top: 10px;
+    font-size: 12px;
+    line-height: 40px;
+    color: #B2D3EF;
+}
+.forgot_email{
+    margin-top: 40px;
+}
+.forgot_email input{
+    padding-left: 20px;
+    width: 382px;
+    height: 44px;
+    background: #F8F8F8;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+}
+input:focus{
+    outline: none;
+}
+.btn_link{
+    margin-top: 40px;
+    width: 160px;
+    height: 50px;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
+    background: #FF8F2F;
+    color: #fff;
+    border: none;
+    font-size: 14px;
+    line-height: 25px;
+    border-radius: 5px;
+}
+.forgot_noti{
+    margin-top: 10px;
+    font-size: 10px;
+    line-height: 35px;
+    text-align: center;
+    color: rgba(178, 211, 239, 0.5);
+}
+
+/* send link popup */
+.forgot_popup {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 200px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(45, 70, 141, 0.5);
+    backdrop-filter: blur(50px);
+  }
+  
+  /* Modal Content */
+  .forgot_content {
+    background-color: #fefefe;
+    margin: 100px auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+.forgot_content p:first-child{
+    margin-top: 80px;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    color: #2D468D;
+}
+.forgot_content p:nth-child(2){
+    margin-top: 40px;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    color: #2D468D;
+}
+.forgot_content button{
+    margin-top: 60px;
+    margin-bottom: 80px;
+    width: 160px;
+    height: 50px;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
+    background: #FF8F2F;
+    border-radius: 5px;
+    font-size: 14px;
+    line-height: 25px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.forgot_content button a{
+    color: #fff;
+}
+
+
+@media(max-width:1023px){
+    .forgot_title{
+        margin-top: 136px;
+    }
+    .forgot_left{
+        display: none;
+    }
+    .forgot_right{
+        width: 100%;
+    }
+    .forgot_content{
+        margin: 0 88px 0 88px;
+        width: calc(100% - 216px);
+    }
+}
+@media(max-width:599px){
+    .forgot_right{
+        padding: 0 20px;
+    }
+    .forgot_title{
+        line-height: 35px;
+    }
+    .forgot_text{
+        line-height: 22px;
+    }
+    .forgot_first{
+        width: 100%;
+    }
+    .forgot_first input{
+        width: 100%;
+    }
+    .btn_link{
+        margin-top: 80px;
+    }
+    .forgot_noti{
+        font-size: 10px;
+        line-height: 22px;
+    }
+    .forgot_content{
+        margin: 0 25px 0 25px;
+        width: calc(100% - 90px);
+    }
+    .forgot_content p{
+        font-size: 18px;
+        line-height: 25px;
+    }
+}

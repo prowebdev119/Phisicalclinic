@@ -1,0 +1,164 @@
+.login{
+    width: 100%;
+    display: flex;
+    height: 100%;
+}
+.login_left{
+    width: 45%;
+    margin-top: 86px;
+    position: relative;
+    background-image: url("../images/login.png");
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+}
+.login_left img{
+    width: 100%;
+    height: 100%;
+}
+.login_right{
+    background-color: #2D468D;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login_title{
+    margin-top: 200px;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    color: #B2D3EF;
+}
+.login_text{
+    margin-top: 10px;
+    font-size: 12px;
+    line-height: 40px;
+    color: #B2D3EF;
+}
+input:focus{
+    outline: none;
+}
+.login_first{
+    margin-top: 40px;
+}
+.login_first input{
+    padding-left: 20px;
+    width: 382px;
+    height: 44px;
+    background: #F8F8F8;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+}
+.login_pass{
+    margin-top: 10px;
+    position: relative;
+}
+.login_pass input{
+    padding-left: 20px;
+    width: 382px;
+    height: 44px;
+    background: #F8F8F8;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+}
+.login_pass img{
+    position: absolute;
+    right: 22px;
+    bottom: 17px;
+    width: 16px;
+    cursor: pointer;
+}
+.btn_login{
+    margin-top: 40px;
+    width: 160px;
+    height: 50px;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
+    background: #FF8F2F;
+    color: #fff;
+    border: none;
+    font-size: 14px;
+    line-height: 25px;
+    border-radius: 5px;
+}
+.forgot{
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 35px;
+    text-align: center;
+}
+.forgot a{
+    color: #FF8F2F;
+}
+.or{
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 35px;
+    text-align: center;
+    color: #B2D3EF;
+}
+.btn_up{
+    margin-top: 20px;
+    width: 160px;
+    height: 50px;
+    border: 1px solid #FF8F2F;
+    border-radius: 5px;
+    font-size: 14px;
+    line-height: 25px;
+    text-align: center;
+    background-color: #2D468D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn_up a{
+    color: #FF8F2F;
+    text-align: center;
+}
+
+
+@media(max-width:1023px){
+    .login_title{
+        margin-top: 140px;
+    }
+    .login_left{
+        display: none;
+    }
+    .login_right{
+        width: 100%;
+    }
+}
+@media(max-width:599px){
+    .login_right{
+        padding: 0 20px;
+    }
+    .login_title{
+        line-height: 35px;
+    }
+    .login_text{
+        line-height: 22px;
+    }
+    .login_first{
+        width: 100%;
+    }
+    .login_first input{
+        width: 100%;
+    }
+    .login_pass{
+        width: 100%;
+    }
+    .login_pass input{
+        width: 100%;
+    }
+    .btn_login{
+        margin-top: 80px;
+    }
+    .forgot{
+        font-size: 12px;
+        line-height: 22px;
+    }
+    .or{
+        font-size: 18px;
+        line-height: 22px;
+    }
+}

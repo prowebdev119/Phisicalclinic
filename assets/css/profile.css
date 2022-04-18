@@ -1,0 +1,184 @@
+.profile{
+    background-color: #F8F8F8;
+}
+.profile_content{
+    width: calc(100% - 434px);
+    padding: 0 217px;
+}
+.profile_title{
+    padding-top: 136px;
+    font-size: 30px;
+    line-height: 50px;
+    text-align: center;
+    color: #2D468D;
+}
+.personal{
+    margin-top: 60px;
+    padding: 0 25px;
+    background: #2D468D;
+    box-shadow: 0px 4px 25px rgba(45, 70, 141, 0.25);
+}
+.per_title{
+    padding-top: 25px;
+    font-size: 20px;
+    line-height: 26px;
+    color: #B2D3EF;
+}
+input{
+    padding-left: 20px;
+    width: 539px;
+    height: 60px;
+    background: #FFFFFF;
+    border: 1px solid #2D468D;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+input:focus{
+    outline: none;
+}
+.per_first{
+    margin-top: 28px;
+}
+.per_last{
+    margin-top: 20px;
+}
+.per_mail{
+    margin-top: 20px;
+}
+.btn_per{
+    display: flex;
+    justify-content: center;
+}
+.personal button{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 160px;
+    height: 50px;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
+    background: #FF8F2F;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 14px;
+    line-height: 25px;
+    border: none;
+}
+
+.password{
+    margin-top: 20px;
+    padding: 0 25px;
+    background: #2D468D;
+    box-shadow: 0px 4px 25px rgba(45, 70, 141, 0.25);
+}
+
+.pas_title{
+    padding-top: 25px;
+    font-size: 20px;
+    line-height: 26px;
+    color: #B2D3EF;
+}
+.pas_current{
+    margin-top: 28px;
+}
+.pas_new{
+    position: relative;
+    margin-top: 20px;
+}
+.pas_new img{
+    position: absolute;
+    width: 16px;
+    top: 20px;
+    right: 25px;
+}
+.pas_con{
+    position: relative;
+    margin-top: 20px;
+}
+.pas_con img{
+    position: absolute;
+    width: 16px;
+    top: 20px;
+    right: 25px;
+}
+.btn_pas{
+    display: flex;
+    justify-content: center;
+}
+.password button{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 160px;
+    height: 50px;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
+    background: #FF8F2F;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 14px;
+    line-height: 25px;
+    border: none;
+}
+.logout{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logout button{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    width: 160px;
+    height: 50px;
+    border: 1px solid #FF8F2F;
+    background-color: #F8F8F8;
+    color: #FF8F2F;
+    border-radius: 5px;
+    font-size: 14px;
+    line-height: 25px;
+}
+.logout p{
+    color: #2D468D;
+    font-size: 14px;
+    line-height: 20px;
+}
+.del_acct{
+    display: flex;
+    margin-bottom: 120px;
+}
+.del_acct a{
+    padding: 0 5px;
+    color: #FF8F2F;
+}
+
+@media(max-width:1023px){
+    .profile_content{
+        padding: 0 40px;
+        width: calc(100% - 80px);
+    }
+    input{
+        width: 100%;
+    }
+}
+@media(max-width:599px){
+    .profile_content{
+        padding: 0 20px;
+        width: calc(100% - 40px);
+    }
+    .profile_title{
+        padding-top: 126px;
+        font-size: 20px;
+        line-height: 35px;
+    }
+    .personal{
+        margin-top: 50px;
+    }
+    .personal button{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .password button{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .logout p{
+        font-size: 12px;
+        line-height: 22px;
+    }
+}

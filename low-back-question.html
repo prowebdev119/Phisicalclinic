@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Low Back Questions</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" type="text/css" href="assets/css/common.css"> -->
+    <link rel="stylesheet" type="text/css" href="assets/css/low-back-question.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+</head>
+<body>
+    <!-- header section start -->
+    <header>
+        <div class="header_top">
+            <img class="back" src="assets/images/back.png">
+            <p>Health Check Questionnaire</p>
+            <img class="close" src="assets/images/close.png">
+        </div>
+        <div class="header_footer">
+            <div class="real_or"></div>
+        </div>
+    </header>
+
+    <!-- main section  -->
+    <main class="main container">
+        <div class="main_content">
+            <div class="question_content">
+                <div class="flex-1">
+                    <div>
+                        <p>How would you describe your pain?</p>
+                        <p>Select all that apply.</p>
+                    </div>
+                    <div>
+                        <div class="grid-1">
+                            <div class="q1_item">
+                                <img src="assets/images/q11111.png">
+                                <p>Sharp</p>
+                            </div>
+                            <div class="q1_item">
+                                <img src="assets/images/q12.png">
+                                <p>Dull</p>
+                            </div>
+                            <div class="q1_item">
+                                <img src="assets/images/q13.png">
+                                <p>Intense</p>
+                            </div>
+                            <div class="q1_item">
+                                <img src="assets/images/q14.png">
+                                <p>Burning</p>
+                            </div>
+                            <div class="q1_item">
+                                <img src="assets/images/q15.png">
+                                <p>Prickly</p>
+                            </div>
+                            <div class="q1_item">
+                                <img src="assets/images/q16.png">
+                                <p>Stabbing</p>
+                            </div>
+                            <div class="q1_item">
+                                <img src="assets/images/q17.png">
+                                <p>Shooting</p>
+                            </div>
+                            <div class="q1_item">
+                                <img src="assets/images/q18.png">
+                                <p>Cramping</p>
+                            </div>
+                            <div class="q1_item">
+                                <img src="assets/images/q19.png">
+                                <p>Gnawing</p>
+                            </div>
+                            <div class="q1_item">
+                                <img src="assets/images/q110.png">
+                                <p>Gripping</p>
+                            </div>
+                            <div class="q1_item">
+                                <img src="assets/images/q111.png">
+                                <p>Pressure</p>
+                            </div>
+                            <div class="q1_item">
+                                <img src="assets/images/q112.png">
+                                <p>Heavy</p>
+                            </div>
+                            <div class="q1_item">
+                                <img src="assets/images/q113.png">
+                                <p>Aching</p>
+                            </div>
+                            <div class="q1_item">
+                                <img src="assets/images/q114.png">
+                                <p>Tender</p>
+                            </div>
+                            <div class="q1_item">
+                                <img src="assets/images/q115.png">
+                                <p>Stinging</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="question_content">
+                <div class="flex-1">
+                    <div>
+                        <p>How intense is your pain?</p>
+                        <p>Use the slider to indicate your pain level.</p>
+                    </div>
+                    <div>                
+                        <div class="flex-2">
+                            <div class="rangeslider">
+                                <div class="tooltip" id="demo"></div>
+                                <input type="range" min="0" max="5" value="0" class="myslider" id="sliderRange">
+                                <img src="assets/images/range_line.png"/>
+                            </div>
+                            <div class="rangename">
+                                <div class="rangename_item">
+                                    <div>0</div>
+                                    <div>No pain</div>
+                                </div>
+                                <div class="rangename_item">
+                                    <div>5</div>
+                                    <div>Very painful</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="question_content">
+                <div class="flex-1">
+                    <div>
+                        <p>Do you feel numbness in your leg(s)?</p>
+                        <p>Select the one that most applies.</p>
+                    </div>
+                    <div>                
+                        <div class="grid-4">
+                            <div>
+                                <div class="q3_item">
+                                    <img src="assets/images/q31.png">
+                                    <p>Yes</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="q3_item">
+                                    <img src="assets/images/q32.png">
+                                    <p>No</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="q3_item">
+                                    <img src="assets/images/q33.png">
+                                    <p>Not Sure</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="question_content">
+                <div class="flex-1">
+                    <div>
+                        <p>Do you feel weakness in one of your legs?</p>
+                        <p>Select the one that most applies.</p>
+                    </div>
+                    <div>                
+                        <div class="grid-4">
+                            <div>
+                                <div class="q4_item">
+                                    <img src="assets/images/q31.png">
+                                    <p>Yes</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="q4_item">
+                                    <img src="assets/images/q32.png">
+                                    <p>No</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="q4_item">
+                                    <img src="assets/images/q33.png">
+                                    <p>Not Sure</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="question_content">
+                <div class="flex-1">
+                    <div>
+                        <p>Do you have any issue with your balance?</p>
+                        <p>Select the one that most applies.</p>
+                    </div>
+                    <div>                
+                        <div class="grid-4">
+                            <div>
+                                <div class="q5_item">
+                                    <img src="assets/images/q31.png">
+                                    <p>Yes</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="q5_item">
+                                    <img src="assets/images/q32.png">
+                                    <p>No</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="q5_item">
+                                    <img src="assets/images/q33.png">
+                                    <p>Not Sure</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="question_content">
+                <div class="flex-1">
+                    <div>
+                        <p>Do you  find it difficult to walk up or down the stairs? </p>
+                        <p>Select the one that most applies.</p>
+                    </div>
+                    <div>                
+                        <div class="grid-4">
+                            <div>
+                                <div class="q6_item">
+                                    <img src="assets/images/q31.png">
+                                    <p>Yes</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="q6_item">
+                                    <img src="assets/images/q32.png">
+                                    <p>No</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="q6_item">
+                                    <img src="assets/images/q33.png">
+                                    <p>Not Sure</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="question_content">
+                <div class="flex-1">
+                    <div>
+                        <p>How intense is your pain in the morning? </p>
+                        <p>Use the slider to indicate your pain level.</p>
+                    </div>
+                    <div>                
+                        <div class="flex-2">
+                            <div class="rangeslider">
+                                <div class="tooltip" id="demo7"></div>
+                                <input type="range" min="0" max="5" value="0" class="myslider" id="sliderRange7">
+                                <img src="assets/images/range_line.png"/>
+                            </div>
+                            <div class="rangename">
+                                <div class="rangename_item">
+                                    <div>0</div>
+                                    <div>No pain</div>
+                                </div>
+                                <div class="rangename_item">
+                                    <div>5</div>
+                                    <div>Very painful</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="question_content">
+                <div class="flex-1">
+                    <div>
+                        <p>How intense is your pain in the evening? </p>
+                        <p>Use the slider to indicate your pain level.</p>
+                    </div>
+                    <div>                
+                        <div class="flex-2">
+                            <div class="rangeslider">
+                                <div class="tooltip" id="demo8"></div>
+                                <input type="range" min="0" max="5" value="0" class="myslider" id="sliderRange8">
+                                <img src="assets/images/range_line.png"/>
+                            </div>
+                            <div class="rangename">
+                                <div class="rangename_item">
+                                    <div>0</div>
+                                    <div>No pain</div>
+                                </div>
+                                <div class="rangename_item">
+                                    <div>5</div>
+                                    <div>Very painful</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="question_content">
+                <div class="flex-1">
+                    <div>
+                        <p>How many hours of sleep, on average, do you get each night?</p>
+                        <p>Select the one that most applies.</p>
+                    </div>
+                    <div>                
+                        <div class="grid-3">
+                            <div class="q9_item">
+                                <img src="assets/images/q91.png">
+                                <p>Less than<br>4 hours</p>
+                            </div>
+                            <div class="q9_item">
+                                <img src="assets/images/q92.png">
+                                <p>4-5 hours</p>
+                            </div>
+                            <div class="q9_item">
+                                <img src="assets/images/q93.png">
+                                <p>6-8 hours</p>
+                            </div>
+                            <div class="q9_item">
+                                <img src="assets/images/q94.png">
+                                <p>More than<br>8 hours</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="question_content">
+                <div class="flex-1">
+                    <div>
+                        <p>How long does it take for the paun to disappear in the morning?</p>
+                        <p>Select the one that most applies.</p>
+                    </div>
+                    <div>                
+                        <div class="grid-3">
+                            <div class="q10_item">
+                                <img src="assets/images/q101.png">
+                                <p>Less than<br>4 hours</p>
+                            </div>
+                            <div class="q10_item">
+                                <img src="assets/images/q102.png">
+                                <p>4-5 hours</p>
+                            </div>
+                            <div class="q10_item">
+                                <img src="assets/images/q103.png">
+                                <p>6-8 hours</p>
+                            </div>
+                            <div class="q10_item">
+                                <img src="assets/images/q104.png">
+                                <p>More than<br>8 hours</p>
+                            </div>
+                        </div>                
+                    </div>
+                </div>
+            </div>
+            <div class="question_content">
+                <div class="flex-1">
+                    <div>
+                        <p>How long have you suffered from this pain?</p>
+                        <p>Select the one that most applies.</p>
+                    </div>
+                    <div>                
+                        <div class="grid-3">
+                            <div class="q11_item">
+                                <img src="assets/images/q111.png">
+                                <p>Less than<br>4 hours</p>
+                            </div>
+                            <div class="q11_item">
+                                <img src="assets/images/q11_2.png">
+                                <p>4-5 hours</p>
+                            </div>
+                            <div class="q11_item">
+                                <img src="assets/images/q11_3.png">
+                                <p>6-8 hours</p>
+                            </div>
+                            <div class="q11_item">
+                                <img src="assets/images/q11_4.png">
+                                <p>More than<br>8 hours</p>
+                            </div>
+                        </div>                
+                    </div>
+                </div>
+            </div>
+            <div class="question_content">
+                <div class="flex-1">
+                    <div>
+                        <p>Which of the following positions give you relief?</p>
+                        <p>Select the one that most applies.</p>
+                    </div>
+                    <div>                
+                        <div class="grid-4">
+                            <div>
+                                <div class="q12_item">
+                                    <img src="assets/images/q12_1.png">
+                                    <p>Sitting</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="q12_item">
+                                    <img src="assets/images/q12_2.png" style="width: 75px;height: auto;">
+                                    <p>Laying</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="q12_item">
+                                    <img src="assets/images/q12_3.png">
+                                    <p>Standing</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="question_content">
+                <div class="flex-1">
+                    <div>
+                        <p>Do you experience any pain when you change position from lying to sitting and vice versa?</p>
+                        <p>Select the one that most applies.</p>
+                    </div>
+                    <div>                
+                        <div class="grid-4">
+                            <div>
+                                <div class="q13_item">
+                                    <img src="assets/images/q31.png">
+                                    <p>Yes</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="q13_item">
+                                    <img src="assets/images/q32.png">
+                                    <p>No</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="q13_item">
+                                    <img src="assets/images/q33.png">
+                                    <p>Not Sure</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="fixed-bottom">
+        <div class="main_btn">
+            <button id="q_back" class="q_back" onclick="plusSlides(-1)">Back</button>
+            <button id="q_next" class="q_next" onclick="plusSlides(1)" disabled>Next</button>
+        </div>
+    </footer>
+
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+     var q_back = document.getElementById("q_back");
+     var q_next = document.getElementById("q_next");
+    //question1
+    var q1_items = document.getElementsByClassName("q1_item");
+    var q1_items_active = 0;
+    for (var i = 0; i < q1_items.length; i++) {
+        q1_items[i].addEventListener("click", function() {
+            this.classList.toggle("q1_item_active");
+            q1_items_active = 0;
+            for (var j = 0; j < q1_items.length; j++) {
+                if(q1_items[j].classList.contains("q1_item_active")) {
+                    q1_items_active += 1;
+                }
+            }
+            if(q1_items_active > 0){
+                q_next.disabled = false;
+            } else if(q1_items_active < 1){
+                q_next.disabled = true;
+            }
+        });
+    }
+
+    //question2
+    var rangeslider = document.getElementById("sliderRange");
+    var output = document.getElementById("demo");
+    output.innerHTML = rangeslider.value;
+    rangeslider.oninput = function() {
+        q_next.disabled = false;
+        output.innerHTML = this.value;
+        output.style.marginLeft =  -9 + (this.value * 18) + "%";
+        output.style.opacity = "1";
+    }
+
+    //question3
+    var q3_items = document.getElementsByClassName("q3_item");
+    for (var i = 0; i < q3_items.length; i++) {
+        q3_items[i].addEventListener("click", function() {
+            for (var j = 0; j < q3_items.length; j++) {
+                q3_items[j].classList.remove("q3_item_active");
+            }
+            this.classList.add("q3_item_active");
+            q_next.disabled = false;
+        });
+    }
+
+    //question4
+    var q4_items = document.getElementsByClassName("q4_item");
+    for (var i = 0; i < q4_items.length; i++) {
+        q4_items[i].addEventListener("click", function() {
+            for (var j = 0; j < q4_items.length; j++) {
+                q4_items[j].classList.remove("q4_item_active");
+            }
+            this.classList.add("q4_item_active");
+            q_next.disabled = false;
+        });
+    }
+    //question5
+    var q5_items = document.getElementsByClassName("q5_item");
+    for (var i = 0; i < q5_items.length; i++) {
+        q5_items[i].addEventListener("click", function() {
+            for (var j = 0; j < q5_items.length; j++) {
+                q5_items[j].classList.remove("q5_item_active");
+            }
+            this.classList.add("q5_item_active");
+            q_next.disabled = false;
+        });
+    }
+    //question6
+    var q6_items = document.getElementsByClassName("q6_item");
+    for (var i = 0; i < q6_items.length; i++) {
+        q6_items[i].addEventListener("click", function() {
+            for (var j = 0; j < q6_items.length; j++) {
+                q6_items[j].classList.remove("q6_item_active");
+            }
+            this.classList.add("q6_item_active");
+            q_next.disabled = false;
+        });
+    }
+    //question7
+    var rangeslider7 = document.getElementById("sliderRange7");
+    var output7 = document.getElementById("demo7");
+    output7.innerHTML = rangeslider7.value;
+    
+    rangeslider7.oninput = function() {
+        q_next.disabled = false;
+        output7.innerHTML = this.value;
+        output7.style.marginLeft =  -13 + (this.value * 20) + "%";
+        output7.style.opacity = "1";
+    }
+    //question8
+    var rangeslider8 = document.getElementById("sliderRange8");
+    var output8 = document.getElementById("demo8");
+    output8.innerHTML = rangeslider8.value;
+    
+    rangeslider8.oninput = function() {
+        q_next.disabled = false;
+        output8.innerHTML = this.value;
+        output8.style.marginLeft =  -13 + (this.value * 20) + "%";
+        output8.style.opacity = "1";
+    }
+    //question9
+    var q9_items = document.getElementsByClassName("q9_item");
+    for (var i = 0; i < q9_items.length; i++) {
+        q9_items[i].addEventListener("click", function() {
+            for (var j = 0; j < q9_items.length; j++) {
+                q9_items[j].classList.remove("q9_item_active");
+            }
+            this.classList.add("q9_item_active");
+            q_next.disabled = false;
+        });
+    }
+
+    //question10
+    var q10_items = document.getElementsByClassName("q10_item");
+    for (var i = 0; i < q10_items.length; i++) {
+        q10_items[i].addEventListener("click", function() {
+            for (var j = 0; j < q10_items.length; j++) {
+                q10_items[j].classList.remove("q10_item_active");
+            }
+            this.classList.add("q10_item_active");
+            q_next.disabled = false;
+        });
+    }
+    //question11
+    var q11_items = document.getElementsByClassName("q11_item");
+    for (var i = 0; i < q11_items.length; i++) {
+        q11_items[i].addEventListener("click", function() {
+            for (var j = 0; j < q11_items.length; j++) {
+                q11_items[j].classList.remove("q11_item_active");
+            }
+            this.classList.add("q11_item_active");
+            q_next.disabled = false;
+        });
+    }
+
+    //question12
+    var q12_items = document.getElementsByClassName("q12_item");
+    for (var i = 0; i < q12_items.length; i++) {
+        q12_items[i].addEventListener("click", function() {
+            for (var j = 0; j < q12_items.length; j++) {
+                q12_items[j].classList.remove("q12_item_active");
+            }
+            this.classList.add("q12_item_active");
+            q_next.disabled = false;
+        });
+    }
+    //question13
+    var q13_items = document.getElementsByClassName("q13_item");
+    for (var i = 0; i < q13_items.length; i++) {
+        q13_items[i].addEventListener("click", function() {
+            for (var j = 0; j < q13_items.length; j++) {
+                q13_items[j].classList.remove("q13_item_active");
+            }
+            this.classList.add("q13_item_active");
+            q_next.disabled = false;
+        });
+    }
+
+    /* Next & previous buttons */
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("question_content");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+            slides[i].classList.remove("fade");   
+        }
+        slides[slideIndex-1].style.display = "block";
+        slides[slideIndex-1].classList.add("fade");  
+    }
+    /* disabling Next button */
+    q_next.addEventListener("click", function() {
+        if(this.disabled === false){
+            this.disabled = true;
+        }
+    });
+    /* enabling Next button */
+    q_back.addEventListener("click", function() {
+        if(q_next.disabled === true){
+            q_next.disabled = false;
+        }
+    });
+</script>
+</html>

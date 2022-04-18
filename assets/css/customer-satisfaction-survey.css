@@ -1,0 +1,135 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+}
+body {
+    background-color: #f6f6f6;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 110;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(45, 70, 141, 0.5);
+    backdrop-filter: blur(50px);
+}
+.modal-content {
+    box-sizing: border-box;
+    width: 425px;
+    background-color: rgb(255, 255, 255, 0.9);
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.modal-content > div:first-child {
+    padding: 30px;
+}
+.modal-content h4 {
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    color: #2d468d;
+    margin-bottom: 20px;
+}
+.modal-content p {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #2d468d;
+    margin-bottom: 40px;
+}
+.modal-content textarea {
+    width: 100%;
+    height: 145px;
+    background-color: #f8f8f8;
+    border: 1px solid rgba(45, 70, 141, 0.3);
+    border-radius: 5px;
+    padding: 15px;
+}
+.modal-content .textarea {
+    margin-bottom: 40px;
+}
+.modal-content .action {
+    display: flex;
+    padding: 30px;
+    background-color: #ffffff;
+    justify-content: flex-end;
+}
+.modal-content .action > *:not(:last-child) {
+    margin-right: 10px;
+}
+.modal-content .action button {
+    text-decoration: none;
+    width: 160px;
+    height: 50px;
+    font-size: 14px;
+    line-height: 25px;
+    border: none;
+    border-radius: 5px;
+}
+.modal-content .action .orange {
+    background-color: #ff8f2f;
+    color: #fff;
+}
+.modal-content .action .transparent {
+    background-color: transparent;
+    color: #5a95cb;
+}
+.modal-content textarea::-webkit-input-placeholder, 
+.modal-content textarea:-ms-input-placeholder, 
+.modal-content textarea::placeholder { /* Edge */
+    font-size: 14px;
+    line-height: 26px;
+    color: rgba(45, 70, 141, 0.5);
+}
+.voting-grid {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.voting-grid img {
+    width: 50px;
+    height: 50px;
+}
+.voting-grid figure {
+    cursor: pointer;
+}
+.voting-grid figcaption {
+    font-size: 14px;
+    text-align: center;
+    color: #2d468d;
+}
+.voting-grid .vote > div {
+    margin-bottom: 10px;
+}
+/*
+.voting-grid .vote.active > div {
+    background-color: #2d468d;
+    border-radius: 10px;
+}
+*/
+.voting-grid .vote.active > figcaption {
+    font-weight: 600;
+}
+@media only screen and (max-width: 375px) {
+
+}
+@media only screen and (max-width: 768px) and (min-width: 376px) {
+
+}
+@media only screen and (max-width: 768px) {
+
+}
+@media only screen and (min-width: 769px) {
+
+}
