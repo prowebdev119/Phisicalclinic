@@ -45,7 +45,6 @@ button:active{
     display: none;
 }
 .dark_logo{
-    /* display: none; */
     width: 174px;
 }
 .header_items{
@@ -66,9 +65,7 @@ a{
     align-items: center;
 }
 .header_items a:hover{
-    /* color: #2D468D; */
     cursor: pointer;
-    /*border-bottom: 1px solid #fff;*/
 }
 .navbar_prog{
     height: 100%;

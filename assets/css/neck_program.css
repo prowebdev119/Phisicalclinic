@@ -122,7 +122,6 @@
 			text-align: center;
 }
 #customers-testimonials .item-image{
-    /* background-color: #5A95CB; */
     text-align: center;
     align-items: center;
     margin: auto;
@@ -163,10 +162,6 @@
 .owl-carousel .owl-next {
   right: -25px;
 }
-
-
-
-
 
 /* include section start  */
 .include{

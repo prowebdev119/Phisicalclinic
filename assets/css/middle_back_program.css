@@ -122,7 +122,6 @@
 			text-align: center;
 }
 #customers-testimonials .item-image{
-    /* background-color: #5A95CB; */
     text-align: center;
     align-items: center;
     margin: auto;
@@ -384,7 +383,6 @@
     background-color: #B2D4EF;
 }
 .faq_content{
-    /* border: 1px solid red; */
     padding: 0 140px;
     padding-bottom: 30px;
 }
