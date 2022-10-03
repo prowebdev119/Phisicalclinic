@@ -139,7 +139,6 @@ button:active{
   
 .myslider {
     -webkit-appearance: none;
-    /* background: #D5DAE8; */
     width: 100%;
     height: 5px;
 	margin-top: 30px;
@@ -149,7 +148,6 @@ button:active{
 .myslider::-webkit-slider-thumb {
     -webkit-appearance: none;
     cursor: pointer;
-	/* margin-left: -15px; */
     margin-top: 50px;
 	z-index: 200;
     width: 30px;
@@ -189,26 +187,6 @@ button:active{
 input{
 	position: relative;
 }
-/* input::before{
-	content: "";
-	position: absolute;
-	top: -10px;
-	left: 0;
-	width: 1px;
-	height: 27px;
-	background-color: #2D468D;
-	z-index: -1;
-}
-input::after{
-	content: "";
-	position: absolute;
-	top: -10px;
-	right: 0;
-	width: 1px;
-	height: 27px;
-	background-color: #2D468D;
-	z-index: -1;
-} */
 .rangename{
     display: flex; 
     justify-content: space-between; 

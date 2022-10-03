@@ -1,10 +1,5 @@
 /* Our program own style */
 .hero{
-    /* background-image: url("../images/program_hero.png"); */
-    /* height: 768px; */
-    /* background-position: 0 86px; */
-    /* background-repeat: no-repeat; */
-    /* background-size: 100%; */
     background-color: #2D468D;
     position: relative;
 }
@@ -76,7 +71,6 @@
 }
 /* programs section start */
 .programs{
-    /* height: 100%; */
     width: 100%;
     background: #F8F8F8;
     font-family: Poppins;
@@ -153,7 +147,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
 }
 .mobile{
     display: none;
@@ -162,9 +155,6 @@
     display: block;
 }
 .right_container{
-    /* border: 1px solid red; */
-    /* max-width: 400px;     */
-    /* height: 500px; */
     padding-left: 75px;
     display: flex;
     flex-direction: column;
